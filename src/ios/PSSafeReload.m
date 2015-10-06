@@ -81,9 +81,9 @@
         NSString *healthCheckJs =
             @"(function () { \
                 if (typeof Package === 'undefined' || \
-                    ! Package['safe-reload'] || \
-                    ! Package['safe-reload'].SafeReload || \
-                    ! Package['safe-reload'].SafeReload.healthy() ) { \
+                    ! Package['ofthewood:safe-reload'] || \
+                    ! Package['ofthewood:safe-reload'].SafeReload || \
+                    ! Package['ofthewood:safe-reload'].SafeReload.healthy() ) { \
                     return 'failed'; \
                 } \
                 else { \
